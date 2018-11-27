@@ -21,8 +21,9 @@ M.add_planet(
         esinw=0.0,
         occ=0.0)    # a secondary eclipse depth in ppm
 
-M.add_planet() # you can add as many planets as you like (up to 10)
+M.add_planet() # you can add as many planets as you like (up to 8)
 
+M.add_moon() # you can add as many moons as you like (up to 8)
 M.add_data(
         time=numpy.arange(0,10,0.0188),                                 # timestamps to evaluate the model on
         itime=numpy.zeros_like(numpy.arange(0,10,0.0188))+0.0188 )      # integration time of each timestamp
@@ -70,12 +71,14 @@ M.add_planet(
         T0=1.0,     
         period=1.0,
         impact=0.1,
-        rprs=0.1,  
-        ecosw=0.0, 
-        esinw=0.0,
         occ=0.0,  
         rvamp=100.) # radial velocity semi-amplitude in m/s
 
+M.add_moon(
+         T0=1.0,     
+        period=1.0
+        impact=0.1,
+        occ=0.0,)  
 M.add_data(
         time=numpy.arange(0,10,0.0188),   
         itime=numpy.zeros_like(numpy.arange(0,10,0.0188))+0.0188 )
@@ -92,7 +95,7 @@ rho: 5.02680657221
 
 Best-fitting planet parameters for planet 0
 impact: 0.0803742216248
-period: 1.00000143821
+period: 1.345
 T0: 1.49999092263
 rprs: 0.0999846857972
 
