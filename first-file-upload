@@ -64,7 +64,7 @@ M.add_star(
         ld4=0.0, 
         dil=0.0,
         zpt=0.0, 
-        veloffset=10 # new keyword, the radial velocity zero-point offset in m/s   
+        veloffset=10 # neyword, the radial velocity zero-point offset in m/s   
         )
 M.add_planet(
         T0=1.0,     
