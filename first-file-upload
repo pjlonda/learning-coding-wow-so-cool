@@ -16,13 +16,12 @@ M.add_planet(
         T0=1.0,     # a transit mid-time  
         period=1.0, # an orbital period in days
         impact=0.1, # an impact parameter
-        rprs=0.1,   # planet stellar radius ratio  
-        ecosw=0.0,  # eccentricity vector
-        esinw=0.0,
+        esinw=1.2,
         occ=0.0)    # a secondary eclipse depth in ppm
 
-M.add_planet() # you can add as many planets as you like (up to 10)
+M.add_planet() # you can add as many planets as you like (up to 8)
 
+M.add_moon() # you can add as many moons as you like (up to 4)
 M.add_data(
         time=numpy.arange(0,10,0.0188),                                 # timestamps to evaluate the model on
         itime=numpy.zeros_like(numpy.arange(0,10,0.0188))+0.0188 )      # integration time of each timestamp
@@ -76,6 +75,13 @@ M.add_planet(
         occ=0.0,  
         rvamp=100.) # radial velocity semi-amplitude in m/s
 
+M.add_moon(
+        T0=1.0
+        period=1.2,
+        impact=.01,
+        rprs=0.1,
+        occ=0.0,) 
+        
 M.add_data(
         time=numpy.arange(0,10,0.0188),   
         itime=numpy.zeros_like(numpy.arange(0,10,0.0188))+0.0188 )
