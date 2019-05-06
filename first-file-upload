@@ -71,13 +71,13 @@ M.add_planet(
         period=1.0,
         impact=0.1,
         rprs=0.1,  
-        ecosw=0.0, 
+        ecosw=0.3, 
         esinw=0.0,
         occ=0.0,  
         rvamp=100.) # radial velocity semi-amplitude in m/s
 
 M.add_data(
-        time=numpy.arange(0,10,0.0188),   
+        time=numpy.arange(0,15,0.0188),   
         itime=numpy.zeros_like(numpy.arange(0,10,0.0188))+0.0188 )
 
 M.add_rv(rvtime=numpy.arange(0,10,2.),                             # radial velocity observation timestamps
