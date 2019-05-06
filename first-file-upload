@@ -6,7 +6,7 @@ M = ktransit.LCModel()
 M.add_star(
         rho=1.5, # mean stellar density in cgs units
         ld1=0.2, # ld1--4 are limb darkening coefficients 
-        ld2=0.4, # if only ld1 and ld2 are non-zero then a quadratic limb darkening law is used
+        ld2=0.4, # if ld1 and ld2 are non-zero then a quadratic limb darkening law is used
         ld3=0.0, # if all four parameters are non-zero we use non-linear flavour limb darkening
         ld4=0.0, 
         dil=0.0, # a dilution factor: 0.0 -> transit not diluted, 0.5 -> transit 50% diluted
