@@ -69,7 +69,7 @@ M.add_star(
 M.add_planet(
         T0=1.0,     
         period=1.0,
-        impact=0.1,
+        impact=0.4,
         rprs=0.1,  
         ecosw=0.0, 
         esinw=0.0,
@@ -88,7 +88,7 @@ rvmodel = M.rvmodel
 plt.plot(M.time,tmod)
 plt.plot(M.rvtime,rvmodel)
 Best-fitting stellar parameters 
-rho: 5.02680657221
+rho: 5.02380657221
 
 Best-fitting planet parameters for planet 0
 impact: 0.0803742216248
