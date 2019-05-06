@@ -43,7 +43,7 @@ fitT.add_guess_planet(
 fitT.add_data(time=time, flux=flux, ferr=ferr)
 
 vary_star = ['rho', 'zpt']      # free stellar parameters
-vary_planet = (['period',       # free planetary parameters
+vary_planet = (['period',       # free parameters
         'T0', 'impact', 
         'rprs'])                # free planet parameters are the same for every planet you model
 
